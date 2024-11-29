@@ -1,0 +1,19 @@
+﻿file name: appsettings.json
+place: in server root dir
+add to .gitignore to not share db connection inf
+
+
+inside:
+
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=Server;Initial Catalog=DataBase;Persist Security Info=True;User ID=***;Password=********;Pooling=False;Encrypt=True;TrustServerCertificate=True"
+  }
+}
