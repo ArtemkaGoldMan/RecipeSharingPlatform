@@ -1,16 +1,17 @@
-﻿using System;
+﻿using BaseLibrary.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BaseLibrary.DTOs;
-using BaseLibrary.Entities;
 
 namespace ServerLibrary.Repositories.Contracts
 {
     public interface IUserService
     {
-        Task<string> RegisterAsync(RegistrationDTO dto);
-        Task<AuthResponseDTO> LoginAsync(LoginDTO dto);
+        Task<User> GetUserByUsernameAsync(string username);
+        Task<User> GetUserByIdAsync(int userId);
+        Task<IEnumerable<User>> GetAllUsersAsync();
+        Task<bool> DeleteUserAsync(int userId);
     }
 }

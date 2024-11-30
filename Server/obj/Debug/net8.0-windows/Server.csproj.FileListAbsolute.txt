@@ -172,3 +172,4 @@ C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Deb
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.pdb
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.genruntimeconfig.cache
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\ref\Server.dll
+C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\Microsoft.AspNetCore.Authentication.JwtBearer.dll
