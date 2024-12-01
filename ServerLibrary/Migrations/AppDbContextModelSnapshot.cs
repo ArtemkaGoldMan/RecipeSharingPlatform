@@ -38,29 +38,6 @@ namespace ServerLibrary.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("BaseLibrary.Entities.Creator", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("DisplayName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId")
-                        .IsUnique();
-
-                    b.ToTable("Creators");
-                });
-
             modelBuilder.Entity("BaseLibrary.Entities.Ingredient", b =>
                 {
                     b.Property<int>("Id")
@@ -89,9 +66,6 @@ namespace ServerLibrary.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CreatorId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -100,11 +74,14 @@ namespace ServerLibrary.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
 
-                    b.HasIndex("CreatorId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Recipes");
                 });
@@ -166,21 +143,10 @@ namespace ServerLibrary.Migrations
                         {
                             Id = 1,
                             Email = "admin@example.com",
-                            PasswordHash = "$2a$11$dHaK6x0yF2dmgwYRW/0wquD0RGrBMVqHDheFo6xEXR2BIgzl1hQtG",
+                            PasswordHash = "$2a$11$a.7tDtCuN1Ph.5TUvcgzKOunKL.0/0JWsyMVWa7TsH.TSNPLxfYou",
                             Role = "Admin",
                             Username = "admin"
                         });
-                });
-
-            modelBuilder.Entity("BaseLibrary.Entities.Creator", b =>
-                {
-                    b.HasOne("BaseLibrary.Entities.User", "User")
-                        .WithOne()
-                        .HasForeignKey("BaseLibrary.Entities.Creator", "UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("BaseLibrary.Entities.Recipe", b =>
@@ -191,15 +157,15 @@ namespace ServerLibrary.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BaseLibrary.Entities.Creator", "Creator")
-                        .WithMany("Recipes")
-                        .HasForeignKey("CreatorId")
+                    b.HasOne("BaseLibrary.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Category");
 
-                    b.Navigation("Creator");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("BaseLibrary.Entities.RecipeIngredient", b =>
@@ -222,11 +188,6 @@ namespace ServerLibrary.Migrations
                 });
 
             modelBuilder.Entity("BaseLibrary.Entities.Category", b =>
-                {
-                    b.Navigation("Recipes");
-                });
-
-            modelBuilder.Entity("BaseLibrary.Entities.Creator", b =>
                 {
                     b.Navigation("Recipes");
                 });

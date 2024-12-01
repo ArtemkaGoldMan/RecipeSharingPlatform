@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\CreateRecipe\" />
+    <Folder Include="Views\Login\" />
+    <Folder Include="Views\Register\" />
+  </ItemGroup>
+
 </Project>
