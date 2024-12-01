@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BaseLibrary.DTOs
 {
@@ -13,9 +10,9 @@ namespace BaseLibrary.DTOs
         public string Description { get; set; }
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
-        public int CreatorId { get; set; }
-        public string CreatorName { get; set; }
-        public List<int> IngredientIds { get; set; }
-        public List<string> IngredientNames { get; set; }
+        public int UserId { get; set; } // Link to User instead of Creator
+        public string Username { get; set; } // User's name instead of Creator's name
+        public List<int> IngredientIds { get; set; } // List of ingredient IDs
+        public List<string> IngredientNames { get; set; } // List of ingredient names
     }
 }

@@ -39,6 +39,10 @@ builder.Services.AddAuthorization();
 // Register your services
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IRecipeService, RecipeService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IIngredientService, IngredientService>();
+
 
 // Configure Swagger with JWT support
 builder.Services.AddEndpointsApiExplorer();

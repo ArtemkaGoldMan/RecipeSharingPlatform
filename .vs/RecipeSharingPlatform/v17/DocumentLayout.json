@@ -3,16 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{727773FF-BB20-4E15-9D12-82626E472078}|Server\\Server.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{727773FF-BB20-4E15-9D12-82626E472078}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{727773FF-BB20-4E15-9D12-82626E472078}|Server\\Server.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\server\\controllers\\ingredientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{727773FF-BB20-4E15-9D12-82626E472078}|Server\\Server.csproj|solutionrelative:server\\controllers\\ingredientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{727773FF-BB20-4E15-9D12-82626E472078}|Server\\Server.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\server\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{727773FF-BB20-4E15-9D12-82626E472078}|Server\\Server.csproj|solutionrelative:server\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\serverlibrary\\repositories\\contracts\\iingredientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\contracts\\iingredientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\serverlibrary\\repositories\\contracts\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\contracts\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\serverlibrary\\repositories\\implementations\\ingredientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\implementations\\ingredientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\serverlibrary\\repositories\\implementations\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\implementations\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\baselibrary\\dtos\\createingredientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\createingredientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\baselibrary\\dtos\\createcategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\createcategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\baselibrary\\dtos\\ingredientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\ingredientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\baselibrary\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\serverlibrary\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{727773FF-BB20-4E15-9D12-82626E472078}|Server\\Server.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{727773FF-BB20-4E15-9D12-82626E472078}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{727773FF-BB20-4E15-9D12-82626E472078}|Server\\Server.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\server\\controllers\\recipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{727773FF-BB20-4E15-9D12-82626E472078}|Server\\Server.csproj|solutionrelative:server\\controllers\\recipecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\baselibrary\\dtos\\recipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\recipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\serverlibrary\\repositories\\implementations\\recipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\implementations\\recipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\baselibrary\\entities\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\entities\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\serverlibrary\\repositories\\contracts\\irecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\contracts\\irecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\serverlibrary\\repositories\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\serverlibrary\\repositories\\contracts\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\contracts\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{727773FF-BB20-4E15-9D12-82626E472078}|Server\\Server.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,14 +99,6 @@
       "RelativeMoniker": "D:0:0:{727773FF-BB20-4E15-9D12-82626E472078}|Server\\Server.csproj|solutionrelative:server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\serverlibrary\\repositories\\contracts\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4898AF30-1B64-4D71-9FCA-F3144604FDDE}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\contracts\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\baselibrary\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\baselibrary\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,28 +115,12 @@
       "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\registrationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\baselibrary\\entities\\creator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\entities\\creator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\baselibrary\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\baselibrary\\dtos\\ingredientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\ingredientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\baselibrary\\dtos\\creatordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\creatordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\baselibrary\\dtos\\createrecipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\createrecipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\baselibrary\\dtos\\recipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5906315-7AB7-4B21-83D4-5FD652129483}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\recipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,7 +130,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,67 +138,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Program.cs",
-              "RelativeDocumentMoniker": "Server\\Program.cs",
-              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Program.cs",
-              "RelativeToolTip": "Server\\Program.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAowFoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Contracts\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Contracts\\ICategoryService.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Contracts\\ICategoryService.cs",
+              "RelativeToolTip": "ServerLibrary\\Repositories\\Contracts\\ICategoryService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:47:54.062Z",
+              "WhenOpened": "2024-12-01T16:22:07.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Implementations\\CategoryService.cs",
+              "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Implementations\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Implementations\\CategoryService.cs",
+              "RelativeToolTip": "ServerLibrary\\Repositories\\Implementations\\CategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T16:23:55.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Server\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Server\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwC0AAAAFAAAAAAAAAA==",
+              "Title": "IngredientService.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Implementations\\IngredientService.cs",
+              "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Implementations\\IngredientService.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Implementations\\IngredientService.cs",
+              "RelativeToolTip": "ServerLibrary\\Repositories\\Implementations\\IngredientService.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAADwv1MAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T14:35:11.794Z",
+              "WhenOpened": "2024-12-01T16:24:33.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Server\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAowDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T16:26:43.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IngredientController.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Controllers\\IngredientController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\IngredientController.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Controllers\\IngredientController.cs",
+              "RelativeToolTip": "Server\\Controllers\\IngredientController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T16:27:25.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IIngredientService.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Contracts\\IIngredientService.cs",
+              "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Contracts\\IIngredientService.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Contracts\\IIngredientService.cs",
+              "RelativeToolTip": "ServerLibrary\\Repositories\\Contracts\\IIngredientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T16:22:24.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateIngredientDTO.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\CreateIngredientDTO.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\CreateIngredientDTO.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\CreateIngredientDTO.cs",
+              "RelativeToolTip": "BaseLibrary\\DTOs\\CreateIngredientDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T16:53:59.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\appsettings.json",
-              "RelativeDocumentMoniker": "Server\\appsettings.json",
-              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\appsettings.json",
-              "RelativeToolTip": "Server\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-30T14:44:15.226Z",
+              "Title": "CreateCategoryDTO.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\CreateCategoryDTO.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\CreateCategoryDTO.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\CreateCategoryDTO.cs",
+              "RelativeToolTip": "BaseLibrary\\DTOs\\CreateCategoryDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T16:53:44.951Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthResponseDTO.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\AuthResponseDTO.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\AuthResponseDTO.cs",
-              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\AuthResponseDTO.cs",
-              "RelativeToolTip": "BaseLibrary\\DTOs\\AuthResponseDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "IngredientDTO.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\IngredientDTO.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\IngredientDTO.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\IngredientDTO.cs",
+              "RelativeToolTip": "BaseLibrary\\DTOs\\IngredientDTO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T16:00:06.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\Entities\\Category.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\Entities\\Category.cs",
-              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\Entities\\Category.cs",
-              "RelativeToolTip": "BaseLibrary\\Entities\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T14:52:53.962Z",
+              "WhenOpened": "2024-11-29T14:45:42.902Z",
               "EditorCaption": ""
             },
             {
@@ -169,40 +261,179 @@
               "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\CategoryDTO.cs",
               "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\CategoryDTO.cs",
               "RelativeToolTip": "BaseLibrary\\DTOs\\CategoryDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-29T14:44:40.303Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "ServerLibrary\\Data\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Data\\AppDbContext.cs",
               "RelativeToolTip": "ServerLibrary\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAqwFQAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAADgvwwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T15:11:24.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAlwCsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:47:54.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RecipeService.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Implementations\\RecipeService.cs",
+              "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Implementations\\RecipeService.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Implementations\\RecipeService.cs",
+              "RelativeToolTip": "ServerLibrary\\Repositories\\Implementations\\RecipeService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAuwCgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T16:23:25.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RecipeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\RecipeDTO.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\RecipeDTO.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\RecipeDTO.cs",
+              "RelativeToolTip": "BaseLibrary\\DTOs\\RecipeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T14:40:41.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RecipeController.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Controllers\\RecipeController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\RecipeController.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Controllers\\RecipeController.cs",
+              "RelativeToolTip": "Server\\Controllers\\RecipeController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T16:25:53.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\Entities\\Recipe.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\Entities\\Recipe.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\Entities\\Recipe.cs",
+              "RelativeToolTip": "BaseLibrary\\Entities\\Recipe.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T16:35:15.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IRecipeService.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Contracts\\IRecipeService.cs",
+              "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Contracts\\IRecipeService.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Contracts\\IRecipeService.cs",
+              "RelativeToolTip": "ServerLibrary\\Repositories\\Contracts\\IRecipeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T16:21:41.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\appsettings.json",
+              "RelativeDocumentMoniker": "Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\appsettings.json",
+              "RelativeToolTip": "Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-30T14:44:15.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AuthResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\AuthResponseDTO.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\AuthResponseDTO.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\AuthResponseDTO.cs",
+              "RelativeToolTip": "BaseLibrary\\DTOs\\AuthResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T16:00:06.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\Entities\\Category.cs",
+              "RelativeToolTip": "BaseLibrary\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T14:52:53.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Contracts\\IAuthService.cs",
               "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Contracts\\IAuthService.cs",
               "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Contracts\\IAuthService.cs",
               "RelativeToolTip": "ServerLibrary\\Repositories\\Contracts\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-30T15:24:51.656Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Implementations\\AuthService.cs",
+              "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Implementations\\AuthService.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Implementations\\AuthService.cs",
+              "RelativeToolTip": "ServerLibrary\\Repositories\\Implementations\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T15:26:16.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Server\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwC0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T14:35:11.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Contracts\\IUserService.cs",
               "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Contracts\\IUserService.cs",
@@ -210,25 +441,11 @@
               "RelativeToolTip": "ServerLibrary\\Repositories\\Contracts\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T15:25:25.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T15:25:25.023Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Implementations\\AuthService.cs",
-              "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Implementations\\AuthService.cs",
-              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Implementations\\AuthService.cs",
-              "RelativeToolTip": "ServerLibrary\\Repositories\\Implementations\\AuthService.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAgwFYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T15:26:16.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 22,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\Repositories\\Implementations\\UserService.cs",
               "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Implementations\\UserService.cs",
@@ -236,12 +453,11 @@
               "RelativeToolTip": "ServerLibrary\\Repositories\\Implementations\\UserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T15:27:26.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T15:27:26.386Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 19,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\Server\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\UserController.cs",
@@ -249,12 +465,11 @@
               "RelativeToolTip": "Server\\Controllers\\UserController.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAgwDQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T15:39:18.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T15:39:18.908Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 26,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\LoginDTO.cs",
               "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\LoginDTO.cs",
@@ -262,12 +477,11 @@
               "RelativeToolTip": "BaseLibrary\\DTOs\\LoginDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T16:00:31.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T16:00:31.596Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 27,
               "Title": "RegistrationDTO.cs",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\RegistrationDTO.cs",
               "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\RegistrationDTO.cs",
@@ -275,25 +489,11 @@
               "RelativeToolTip": "BaseLibrary\\DTOs\\RegistrationDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T15:59:55.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T15:59:55.651Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Creator.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\Entities\\Creator.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\Entities\\Creator.cs",
-              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\Entities\\Creator.cs",
-              "RelativeToolTip": "BaseLibrary\\Entities\\Creator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T14:52:54.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 28,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\Entities\\User.cs",
               "RelativeDocumentMoniker": "BaseLibrary\\Entities\\User.cs",
@@ -301,38 +501,11 @@
               "RelativeToolTip": "BaseLibrary\\Entities\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T14:47:42.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T14:47:42.743Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IngredientDTO.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\IngredientDTO.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\IngredientDTO.cs",
-              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\IngredientDTO.cs",
-              "RelativeToolTip": "BaseLibrary\\DTOs\\IngredientDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T14:45:42.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CreatorDTO.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\CreatorDTO.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\CreatorDTO.cs",
-              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\CreatorDTO.cs",
-              "RelativeToolTip": "BaseLibrary\\DTOs\\CreatorDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T14:45:26.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "CreateRecipeDTO.cs",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\CreateRecipeDTO.cs",
               "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\CreateRecipeDTO.cs",
@@ -340,21 +513,7 @@
               "RelativeToolTip": "BaseLibrary\\DTOs\\CreateRecipeDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T14:44:17.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RecipeDTO.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\RecipeDTO.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\RecipeDTO.cs",
-              "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\DTOs\\RecipeDTO.cs",
-              "RelativeToolTip": "BaseLibrary\\DTOs\\RecipeDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T14:40:41.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T14:44:17.938Z"
             }
           ]
         }

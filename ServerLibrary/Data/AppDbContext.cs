@@ -11,7 +11,6 @@ namespace ServerLibrary.Data
         // DbSets
         public DbSet<User> Users { get; set; }
         public DbSet<Recipe> Recipes { get; set; }
-        public DbSet<Creator> Creators { get; set; }
         public DbSet<Ingredient> Ingredients { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<RecipeIngredient> RecipeIngredients { get; set; }
@@ -45,12 +44,6 @@ namespace ServerLibrary.Data
                 .HasMaxLength(20)
                 .IsRequired();
 
-            modelBuilder.Entity<Creator>()
-                .HasOne(c => c.User)
-                .WithOne()
-                .HasForeignKey<Creator>(c => c.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
-
             modelBuilder.Entity<RecipeIngredient>()
                 .HasKey(ri => new { ri.RecipeId, ri.IngredientId });
 
@@ -65,9 +58,9 @@ namespace ServerLibrary.Data
                 .HasForeignKey(ri => ri.IngredientId);
 
             modelBuilder.Entity<Recipe>()
-                .HasOne(r => r.Creator)
-                .WithMany(c => c.Recipes)
-                .HasForeignKey(r => r.CreatorId)
+                .HasOne(r => r.User)
+                .WithMany()
+                .HasForeignKey(r => r.UserId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Recipe>()

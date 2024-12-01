@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace BaseLibrary.DTOs
 {
-    public class CreatorDTO
+    public class CreateCategoryDTO
     {
-        public int Id { get; set; }
         public string Name { get; set; }
-        public string Email { get; set; }
     }
 }

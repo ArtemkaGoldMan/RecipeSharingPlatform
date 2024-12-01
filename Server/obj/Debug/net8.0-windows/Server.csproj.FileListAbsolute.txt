@@ -17,6 +17,7 @@ C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Deb
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\Azure.Identity.dll
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\BCrypt.Net-Next.dll
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\Humanizer.dll
+C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\Microsoft.Build.Locator.dll
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.dll
@@ -172,4 +173,3 @@ C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Deb
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.pdb
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.genruntimeconfig.cache
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\ref\Server.dll
-C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\Microsoft.AspNetCore.Authentication.JwtBearer.dll
