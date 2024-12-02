@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\webclient\\models\\recipeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|solutionrelative:webclient\\models\\recipeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\webclient\\views\\recipes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|solutionrelative:webclient\\views\\recipes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\webclient\\views\\recipes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|solutionrelative:webclient\\views\\recipes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -19,12 +11,20 @@
       "RelativeMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|solutionrelative:webclient\\views\\recipes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\webclient\\views\\recipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|solutionrelative:webclient\\views\\recipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\webclient\\models\\recipeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|solutionrelative:webclient\\models\\recipeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\webclient\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|solutionrelative:webclient\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\webclient\\views\\recipes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|solutionrelative:webclient\\views\\recipes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\webclient\\views\\recipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|solutionrelative:webclient\\views\\recipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F887133E-8E72-4358-8E15-5380C215992C}|WebClient\\WebClient.csproj|c:\\users\\artem\\university\\proj_web_les\\lab5\\recipesharingplatform\\webclient\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -102,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -110,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\WebClient\\Views\\Recipes\\Details.cshtml",
               "RelativeDocumentMoniker": "WebClient\\Views\\Recipes\\Details.cshtml",
@@ -118,38 +118,37 @@
               "RelativeToolTip": "WebClient\\Views\\Recipes\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T15:29:29.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T15:29:29.12Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\WebClient\\Views\\Recipes\\Edit.cshtml",
               "RelativeDocumentMoniker": "WebClient\\Views\\Recipes\\Edit.cshtml",
               "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\WebClient\\Views\\Recipes\\Edit.cshtml",
               "RelativeToolTip": "WebClient\\Views\\Recipes\\Edit.cshtml",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAuwCcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-02T15:15:51.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\WebClient\\Views\\Recipes\\Create.cshtml",
               "RelativeDocumentMoniker": "WebClient\\Views\\Recipes\\Create.cshtml",
               "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\WebClient\\Views\\Recipes\\Create.cshtml",
               "RelativeToolTip": "WebClient\\Views\\Recipes\\Create.cshtml",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAuwCUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-02T15:15:37.936Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\WebClient\\Views\\Recipes\\Index.cshtml",
               "RelativeDocumentMoniker": "WebClient\\Views\\Recipes\\Index.cshtml",
@@ -157,31 +156,30 @@
               "RelativeToolTip": "WebClient\\Views\\Recipes\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T15:15:20.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T15:15:20.896Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "RecipeViewModel.cs",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\WebClient\\Models\\RecipeViewModel.cs",
               "RelativeDocumentMoniker": "WebClient\\Models\\RecipeViewModel.cs",
               "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\WebClient\\Models\\RecipeViewModel.cs",
               "RelativeToolTip": "WebClient\\Models\\RecipeViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T15:10:31.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "RecipesController.cs",
               "DocumentMoniker": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\WebClient\\Controllers\\RecipesController.cs",
               "RelativeDocumentMoniker": "WebClient\\Controllers\\RecipesController.cs",
               "ToolTip": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\WebClient\\Controllers\\RecipesController.cs",
               "RelativeToolTip": "WebClient\\Controllers\\RecipesController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAuwFwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAuwH0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T15:10:06.625Z",
               "EditorCaption": ""
@@ -196,8 +194,7 @@
               "RelativeToolTip": "WebClient\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-01T20:59:49.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T20:59:49.558Z"
             },
             {
               "$type": "Document",
@@ -209,8 +206,7 @@
               "RelativeToolTip": "WebClient\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T21:00:51.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T21:00:51.98Z"
             },
             {
               "$type": "Document",
@@ -222,8 +218,7 @@
               "RelativeToolTip": "WebClient\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-01T21:01:58.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T21:01:58.539Z"
             },
             {
               "$type": "Document",
@@ -235,8 +230,7 @@
               "RelativeToolTip": "Server\\Controllers\\RecipeController.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAiwD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T16:25:53.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T16:25:53.525Z"
             },
             {
               "$type": "Document",
@@ -248,8 +242,7 @@
               "RelativeToolTip": "WebClient\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T15:07:31.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T15:07:31.669Z"
             },
             {
               "$type": "Document",
@@ -261,8 +254,7 @@
               "RelativeToolTip": "WebClient\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAA2wB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T20:55:56.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T20:55:56.451Z"
             },
             {
               "$type": "Document",
@@ -274,8 +266,7 @@
               "RelativeToolTip": "Server\\Program.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:47:54.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T15:47:54.062Z"
             },
             {
               "$type": "Document",
@@ -287,8 +278,7 @@
               "RelativeToolTip": "ServerLibrary\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:11:24.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T15:11:24.968Z"
             },
             {
               "$type": "Document",
@@ -300,8 +290,7 @@
               "RelativeToolTip": "BaseLibrary\\Entities\\Recipe.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAkwA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T16:35:15.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T16:35:15.947Z"
             },
             {
               "$type": "Document",
@@ -313,8 +302,7 @@
               "RelativeToolTip": "BaseLibrary\\DTOs\\RecipeDTO.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAUwA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T14:40:41.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T14:40:41.415Z"
             },
             {
               "$type": "Document",
@@ -326,8 +314,7 @@
               "RelativeToolTip": "ServerLibrary\\Repositories\\Implementations\\RecipeService.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAuwHAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T16:23:25.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T16:23:25.792Z"
             },
             {
               "$type": "Document",
@@ -339,8 +326,7 @@
               "RelativeToolTip": "ServerLibrary\\Repositories\\Contracts\\IRecipeService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T16:21:41.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T16:21:41.899Z"
             },
             {
               "$type": "Document",

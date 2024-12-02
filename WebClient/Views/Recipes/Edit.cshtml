@@ -1,39 +1,47 @@
 ﻿@model WebClient.Models.RecipeViewModel
 
-<h1>Edit Recipe</h1>
+<h2>Edit Recipe</h2>
 
-<form asp-action="Edit" method="post">
+<form asp-action="Edit">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <input type="hidden" asp-for="Id" />
 
     <div class="form-group">
-        <label for="Title">Title</label>
-        <input type="text" class="form-control" asp-for="Title" />
+        <label asp-for="Title"></label>
+        <input asp-for="Title" class="form-control" />
         <span asp-validation-for="Title" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label for="Category">Category</label>
-        <input type="text" class="form-control" asp-for="Category" />
-        <span asp-validation-for="Category" class="text-danger"></span>
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label for="Creator">Creator</label>
-        <input type="text" class="form-control" asp-for="Creator" />
+        <label asp-for="Creator"></label>
+        <input asp-for="Creator" class="form-control" />
         <span asp-validation-for="Creator" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label for="Ingredients">Ingredients</label>
-        <textarea class="form-control" asp-for="Ingredients"></textarea>
+        <label asp-for="Category"></label>
+        <input asp-for="Category" class="form-control" />
+        <span asp-validation-for="Category" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Ingredients"></label>
+        <textarea asp-for="Ingredients" class="form-control"></textarea>
         <span asp-validation-for="Ingredients" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label for="Instructions">Instructions</label>
-        <textarea class="form-control" asp-for="Instructions"></textarea>
+        <label asp-for="Instructions"></label>
+        <textarea asp-for="Instructions" class="form-control"></textarea>
         <span asp-validation-for="Instructions" class="text-danger"></span>
     </div>
 
     <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>
