@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using ServerLibrary.Repositories.Contracts;
 using BaseLibrary.DTOs;
 
@@ -7,7 +6,6 @@ namespace Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class RecipeController : ControllerBase
     {
         private readonly IRecipeService _recipeService;
@@ -18,7 +16,6 @@ namespace Server.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous]
         public async Task<IActionResult> GetAllRecipes()
         {
             var recipes = await _recipeService.GetAllRecipesAsync();
@@ -26,7 +23,6 @@ namespace Server.Controllers
         }
 
         [HttpGet("{id}")]
-        [AllowAnonymous]
         public async Task<IActionResult> GetRecipeById(int id)
         {
             var recipe = await _recipeService.GetRecipeByIdAsync(id);
@@ -58,7 +54,6 @@ namespace Server.Controllers
         }
 
         [HttpGet("categories")]
-        [AllowAnonymous]
         public async Task<IActionResult> GetAllCategories()
         {
             var categories = await _recipeService.GetAllCategoriesAsync();

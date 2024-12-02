@@ -21,25 +21,24 @@ namespace ServerLibrary.Repositories.Implementations
         // Get all recipes
         public async Task<IEnumerable<RecipeDTO>> GetAllRecipesAsync()
         {
-            var recipes = await _context.Recipes.Include(r => r.User).ToListAsync();
+            var recipes = await _context.Recipes.ToListAsync();
 
             return recipes.Select(r => new RecipeDTO
             {
                 Id = r.Id,
                 Title = r.Title,
                 Description = r.Description,
-                Username = r.User?.Username, // Include only user name, not the entire User object
+                Creator = r.Creator, // Use the Creator property instead of User
                 Category = r.Category,
                 Ingredients = r.Ingredients,
                 Instructions = r.Instructions
             }).ToList();
         }
 
-
         // Get a single recipe by ID
         public async Task<RecipeDTO> GetRecipeByIdAsync(int id)
         {
-            var recipe = await _context.Recipes.Include(r => r.User).FirstOrDefaultAsync(r => r.Id == id);
+            var recipe = await _context.Recipes.FirstOrDefaultAsync(r => r.Id == id);
 
             if (recipe == null) return null;
 
@@ -48,13 +47,12 @@ namespace ServerLibrary.Repositories.Implementations
                 Id = recipe.Id,
                 Title = recipe.Title,
                 Description = recipe.Description,
-                Username = recipe.User?.Username,
+                Creator = recipe.Creator,
                 Category = recipe.Category,
                 Ingredients = recipe.Ingredients,
                 Instructions = recipe.Instructions
             };
         }
-
 
         // Create a new recipe
         public async Task<Recipe> CreateRecipeAsync(RecipeDTO recipeDto)
@@ -63,10 +61,10 @@ namespace ServerLibrary.Repositories.Implementations
             {
                 Title = recipeDto.Title,
                 Description = recipeDto.Description,
-                UserId = recipeDto.UserId, // Associate with the user
-                Category = recipeDto.Category, // Store the category as a string
-                Ingredients = recipeDto.Ingredients, // Use the single string for ingredients
-                Instructions = recipeDto.Instructions // Store instructions
+                Creator = recipeDto.Creator, // Set the Creator directly
+                Category = recipeDto.Category,
+                Ingredients = recipeDto.Ingredients,
+                Instructions = recipeDto.Instructions
             };
 
             _context.Recipes.Add(recipe);
@@ -82,14 +80,14 @@ namespace ServerLibrary.Repositories.Implementations
 
             recipe.Title = recipeDto.Title;
             recipe.Description = recipeDto.Description;
+            recipe.Creator = recipeDto.Creator;
             recipe.Category = recipeDto.Category;
-            recipe.Ingredients = recipeDto.Ingredients; // Use the Ingredients string directly
+            recipe.Ingredients = recipeDto.Ingredients;
             recipe.Instructions = recipeDto.Instructions;
 
             await _context.SaveChangesAsync();
             return recipe;
         }
-
 
         // Delete a recipe by ID
         public async Task<bool> DeleteRecipeAsync(int id)
@@ -102,6 +100,7 @@ namespace ServerLibrary.Repositories.Implementations
             return true;
         }
 
+        // Get all categories
         public async Task<IEnumerable<string>> GetAllCategoriesAsync()
         {
             return await _context.Recipes
@@ -109,6 +108,5 @@ namespace ServerLibrary.Repositories.Implementations
                 .Distinct()
                 .ToListAsync();
         }
-
     }
 }

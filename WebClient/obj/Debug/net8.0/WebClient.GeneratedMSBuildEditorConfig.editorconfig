@@ -18,14 +18,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WebClient
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/artem/University/Proj_Web_Les/lab5/RecipeSharingPlatform/WebClient/Views/Account/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/artem/University/Proj_Web_Les/lab5/RecipeSharingPlatform/WebClient/Views/Account/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/artem/University/Proj_Web_Les/lab5/RecipeSharingPlatform/WebClient/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,16 +26,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/artem/University/Proj_Web_Les/lab5/RecipeSharingPlatform/WebClient/Views/Recipe/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXENyZWF0ZS5jc2h0bWw=
+[C:/Users/artem/University/Proj_Web_Les/lab5/RecipeSharingPlatform/WebClient/Views/Recipes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/artem/University/Proj_Web_Les/lab5/RecipeSharingPlatform/WebClient/Views/Recipe/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXERldGFpbHMuY3NodG1s
+[C:/Users/artem/University/Proj_Web_Les/lab5/RecipeSharingPlatform/WebClient/Views/Recipes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/artem/University/Proj_Web_Les/lab5/RecipeSharingPlatform/WebClient/Views/Recipe/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXEVkaXQuY3NodG1s
+[C:/Users/artem/University/Proj_Web_Les/lab5/RecipeSharingPlatform/WebClient/Views/Recipes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artem/University/Proj_Web_Les/lab5/RecipeSharingPlatform/WebClient/Views/Recipes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/artem/University/Proj_Web_Les/lab5/RecipeSharingPlatform/WebClient/Views/Shared/Error.cshtml]

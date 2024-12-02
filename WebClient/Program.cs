@@ -1,22 +1,19 @@
+using WebClient.Controllers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddHttpClient(); // Add HttpClient
+builder.Services.AddHttpClient<RecipesController>();
 
-builder.Services.AddSession(); // Add session for storing JWT token
-builder.Services.AddDistributedMemoryCache();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseDeveloperExceptionPage(); // Enable detailed error messages
-}
-else
+if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -24,8 +21,6 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
-app.UseSession(); // Enable session middleware
 
 app.UseAuthorization();
 

@@ -1,0 +1,13 @@
+﻿@model WebClient.Models.RecipeViewModel
+
+<h1>Recipe Details</h1>
+
+<div>
+    <h3>@Model.Title</h3>
+    <p><strong>Creator:</strong> @Model.Creator</p>
+    <p><strong>Category:</strong> @Model.Category</p>
+    <p><strong>Ingredients:</strong> @Model.Ingredients</p>
+    <p><strong>Instructions:</strong> @Model.Instructions</p>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

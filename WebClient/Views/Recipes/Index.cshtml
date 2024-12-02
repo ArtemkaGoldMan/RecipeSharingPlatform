@@ -1,0 +1,30 @@
+﻿@model List<WebClient.Models.RecipeViewModel>
+
+<h1>Recipes</h1>
+<a asp-action="Create" class="btn btn-primary">Create New Recipe</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Creator</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var recipe in Model)
+        {
+            <tr>
+                <td>@recipe.Title</td>
+                <td>@recipe.Category</td>
+                <td>@recipe.Creator</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@recipe.Id" class="btn btn-info">Details</a>
+                    <a asp-action="Edit" asp-route-id="@recipe.Id" class="btn btn-warning">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@recipe.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
