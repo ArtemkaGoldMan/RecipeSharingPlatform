@@ -1,14 +1,15 @@
-﻿using System.Configuration;
-using System.Data;
+﻿using System;
 using System.Windows;
+using WPFClient.Services;
+using WPFClient.ViewModels;
 
 namespace WPFClient
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            InitializeComponent();
+        }
     }
-
 }

@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFClient"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Recipe Manager" Height="450" Width="800">
     <Grid>
-
+        <DataGrid ItemsSource="{Binding Recipes}" 
+          SelectedItem="{Binding SelectedRecipe}" 
+          AutoGenerateColumns="False" 
+          Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Title" Binding="{Binding Title}" />
+                <DataGridTextColumn Header="Category" Binding="{Binding Category}" />
+                <DataGridTextColumn Header="Creator" Binding="{Binding Creator}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10">
+            <Button Content="Add" Command="{Binding AddRecipeCommand}" Width="75" />
+            <Button Content="Edit" Command="{Binding EditRecipeCommand}" Width="75" Margin="5,0,0,0" />
+            <Button Content="Delete" Command="{Binding DeleteRecipeCommand}" Width="75" Margin="5,0,0,0" />
+        </StackPanel>
     </Grid>
 </Window>

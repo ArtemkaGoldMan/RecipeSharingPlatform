@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\App.xaml
-11407045341
+2-339301175
 
-61367701216
-1981124507420
-MainWindow.xaml;
+131939582322
+1991405981689
+MainWindow.xaml;RecipeDetailsView.xaml;
 
-False
+True
 

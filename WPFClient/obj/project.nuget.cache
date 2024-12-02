@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Ieb3aGui0QA=",
+  "dgSpecHash": "GduNcV+zT+g=",
   "success": true,
   "projectFilePath": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\WPFClient\\WPFClient.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\artem\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

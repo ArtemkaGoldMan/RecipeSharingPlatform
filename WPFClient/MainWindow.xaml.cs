@@ -8,6 +8,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPFClient.Services;
+using WPFClient.ViewModels;
 
 namespace WPFClient
 {
@@ -19,6 +21,10 @@ namespace WPFClient
         public MainWindow()
         {
             InitializeComponent();
+
+            // Create the service and bind the ViewModel to the DataContext
+            var recipeService = new RecipeService();
+            DataContext = new MainViewModel(recipeService);
         }
     }
 }
