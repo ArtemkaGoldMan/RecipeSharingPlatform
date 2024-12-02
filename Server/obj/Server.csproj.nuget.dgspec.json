@@ -291,7 +291,14 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\BaseLibrary.csproj": {
+                "projectPath": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\BaseLibrary.csproj"
+              },
+              "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\ServerLibrary.csproj": {
+                "projectPath": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\ServerLibrary\\ServerLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

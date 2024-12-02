@@ -1,22 +1,30 @@
 ﻿@model List<WebClient.Models.RecipeViewModel>
+
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>All Recipes</h1>
 
-<h2>Recipes</h2>
-
-@foreach (var recipe in Model)
+@if (Model == null || !Model.Any())
 {
-    <div>
-        <h3>@recipe.Title</h3>
-        <p>@recipe.Description</p>
-        <p>Category: @recipe.CategoryName</p>
+    <p>No recipes found. Please add some recipes!</p>
+}
+else
+{
+    <div class="row">
+        @foreach (var recipe in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">@recipe.Title</h5>
+                        <p class="card-text"><strong>Category:</strong> @recipe.Category</p>
+                        <p>@recipe.Description</p>
+                        <a href="/Recipe/Details/@recipe.Id" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
 }
-
-<a asp-action="CreateRecipe">Create New Recipe</a>

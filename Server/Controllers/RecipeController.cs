@@ -18,6 +18,7 @@ namespace Server.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAllRecipes()
         {
             var recipes = await _recipeService.GetAllRecipesAsync();
@@ -25,6 +26,7 @@ namespace Server.Controllers
         }
 
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetRecipeById(int id)
         {
             var recipe = await _recipeService.GetRecipeByIdAsync(id);
@@ -56,6 +58,7 @@ namespace Server.Controllers
         }
 
         [HttpGet("categories")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAllCategories()
         {
             var categories = await _recipeService.GetAllCategoriesAsync();

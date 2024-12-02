@@ -7,9 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\CreateRecipe\" />
-    <Folder Include="Views\Login\" />
-    <Folder Include="Views\Register\" />
+    <ProjectReference Include="..\BaseLibrary\BaseLibrary.csproj" />
+    <ProjectReference Include="..\ServerLibrary\ServerLibrary.csproj" />
   </ItemGroup>
 
 </Project>

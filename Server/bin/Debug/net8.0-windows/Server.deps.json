@@ -1024,6 +1024,10 @@
         }
       },
       "WebClient/1.0.0": {
+        "dependencies": {
+          "BaseLibrary": "1.0.0",
+          "ServerLibrary": "1.0.0"
+        },
         "runtime": {
           "WebClient.dll": {
             "assemblyVersion": "1.0.0",

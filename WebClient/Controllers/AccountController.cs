@@ -1,10 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
 using WebClient.Models;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace WebClient.Controllers
 {
@@ -12,10 +9,9 @@ namespace WebClient.Controllers
     {
         private readonly HttpClient _httpClient;
 
-        public AccountController(IHttpClientFactory httpClientFactory)
+        public AccountController(HttpClient httpClient)
         {
-            _httpClient = httpClientFactory.CreateClient();
-            _httpClient.BaseAddress = new Uri("https://localhost:7181/api/"); 
+            _httpClient = httpClient;
         }
 
         [HttpGet]
@@ -27,25 +23,19 @@ namespace WebClient.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
-            if (!ModelState.IsValid)
-                return View(model);
+            if (!ModelState.IsValid) return View(model);
 
-            var json = JsonSerializer.Serialize(new { model.Username, model.Password });
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-            var response = await _httpClient.PostAsync("login", content);
-
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7181/api/Auth/login", model);
             if (response.IsSuccessStatusCode)
             {
                 var token = await response.Content.ReadAsStringAsync();
                 HttpContext.Session.SetString("JwtToken", token);
-                return RedirectToAction("Index", "Home"); // Redirect after successful login
+                return RedirectToAction("Index", "Home");
             }
 
-            ModelState.AddModelError("", "Invalid username or password.");
-            return View(model); // Show validation errors
+            ModelState.AddModelError("", "Invalid login attempt");
+            return View(model);
         }
-
 
         [HttpGet]
         public IActionResult Register()
@@ -56,28 +46,21 @@ namespace WebClient.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
-            if (!ModelState.IsValid)
-                return View(model);
+            if (!ModelState.IsValid) return View(model);
 
-            var json = JsonSerializer.Serialize(new { model.Username, model.Email, model.Password });
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-            var response = await _httpClient.PostAsync("register", content);
-
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7181/api/Auth/register", model);
             if (response.IsSuccessStatusCode)
             {
-                return RedirectToAction("Login"); // Redirect to login page after registration
+                return RedirectToAction("Login");
             }
 
-            ModelState.AddModelError("", "Registration failed. Please try again.");
+            ModelState.AddModelError("", "Registration failed");
             return View(model);
         }
 
-
-        [HttpPost]
         public IActionResult Logout()
         {
-            HttpContext.Session.Remove("JwtToken");
+            HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
         }
     }
