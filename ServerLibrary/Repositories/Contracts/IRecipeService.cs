@@ -10,10 +10,11 @@ namespace ServerLibrary.Repositories.Contracts
 {
     public interface IRecipeService
     {
-        Task<IEnumerable<Recipe>> GetAllRecipesAsync();
-        Task<Recipe> GetRecipeByIdAsync(int id);
+        Task<IEnumerable<RecipeDTO>> GetAllRecipesAsync();
+        Task<RecipeDTO> GetRecipeByIdAsync(int id);
         Task<Recipe> CreateRecipeAsync(RecipeDTO recipeDto);
         Task<Recipe> UpdateRecipeAsync(int id, RecipeDTO recipeDto);
         Task<bool> DeleteRecipeAsync(int id);
+        Task<IEnumerable<string>> GetAllCategoriesAsync();
     }
 }

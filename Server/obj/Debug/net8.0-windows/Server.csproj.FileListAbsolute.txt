@@ -1,3 +1,11 @@
+C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.csproj.AssemblyReference.cache
+C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.AssemblyInfoInputs.cache
+C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.AssemblyInfo.cs
+C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.csproj.CoreCompileInputs.cache
+C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.sourcelink.json
+C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\WebClient.deps.json
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\WebClient.runtimeconfig.json
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\WebClient.staticwebassets.runtime.json
@@ -151,14 +159,6 @@ C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Deb
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\ServerLibrary.pdb
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\WebClient.pdb
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\bin\Debug\net8.0-windows\WPFClient.pdb
-C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.csproj.AssemblyReference.cache
-C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.AssemblyInfoInputs.cache
-C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.AssemblyInfo.cs
-C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.csproj.CoreCompileInputs.cache
-C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\Server.sourcelink.json
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\staticwebassets.build.json
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\staticwebassets.development.json
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\Server\obj\Debug\net8.0-windows\staticwebassets\msbuild.Server.Microsoft.AspNetCore.StaticWebAssets.props

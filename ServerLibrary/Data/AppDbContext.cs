@@ -11,80 +11,72 @@ namespace ServerLibrary.Data
         // DbSets
         public DbSet<User> Users { get; set; }
         public DbSet<Recipe> Recipes { get; set; }
-        public DbSet<Ingredient> Ingredients { get; set; }
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<RecipeIngredient> RecipeIngredients { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<User>()
-                .HasIndex(u => u.Username)
-                .IsUnique();
+            // User Entity Configuration
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.HasIndex(u => u.Username).IsUnique();
+                entity.HasIndex(u => u.Email).IsUnique();
 
-            modelBuilder.Entity<User>()
-                .HasIndex(u => u.Email)
-                .IsUnique();
+                entity.Property(u => u.Username)
+                    .HasMaxLength(50)
+                    .IsRequired();
 
-            modelBuilder.Entity<User>()
-                .Property(u => u.Username)
-                .HasMaxLength(50)
-                .IsRequired();
+                entity.Property(u => u.Email)
+                    .HasMaxLength(100)
+                    .IsRequired();
 
-            modelBuilder.Entity<User>()
-                .Property(u => u.Email)
-                .HasMaxLength(100)
-                .IsRequired();
+                entity.Property(u => u.PasswordHash)
+                    .IsRequired();
 
-            modelBuilder.Entity<User>()
-                .Property(u => u.PasswordHash)
-                .IsRequired();
+                entity.Property(u => u.Role)
+                    .HasMaxLength(20)
+                    .IsRequired();
 
-            modelBuilder.Entity<User>()
-                .Property(u => u.Role)
-                .HasMaxLength(20)
-                .IsRequired();
-
-            modelBuilder.Entity<RecipeIngredient>()
-                .HasKey(ri => new { ri.RecipeId, ri.IngredientId });
-
-            modelBuilder.Entity<RecipeIngredient>()
-                .HasOne(ri => ri.Recipe)
-                .WithMany(r => r.RecipeIngredients)
-                .HasForeignKey(ri => ri.RecipeId);
-
-            modelBuilder.Entity<RecipeIngredient>()
-                .HasOne(ri => ri.Ingredient)
-                .WithMany(i => i.RecipeIngredients)
-                .HasForeignKey(ri => ri.IngredientId);
-
-            modelBuilder.Entity<Recipe>()
-                .HasOne(r => r.User)
-                .WithMany()
-                .HasForeignKey(r => r.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
-
-            modelBuilder.Entity<Recipe>()
-                .HasOne(r => r.Category)
-                .WithMany(c => c.Recipes)
-                .HasForeignKey(r => r.CategoryId)
-                .OnDelete(DeleteBehavior.Cascade);
-
-            modelBuilder.Entity<User>().HasData(
-                new User
+                // Seed Admin User
+                entity.HasData(new User
                 {
                     Id = 1,
                     Username = "admin",
                     Email = "admin@example.com",
-                    PasswordHash = BCrypt.Net.BCrypt.HashPassword("Admin123!"),
+                    PasswordHash = BCrypt.Net.BCrypt.HashPassword("admin"),
                     Role = "Admin"
-                }
-            );
+                });
+            });
+
+            // Recipe Entity Configuration
+            modelBuilder.Entity<Recipe>(entity =>
+            {
+                entity.HasOne(r => r.User)
+                    .WithMany(u => u.Recipes) // Added navigation property for clarity
+                    .HasForeignKey(r => r.UserId)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                entity.Property(r => r.Title)
+                    .HasMaxLength(100)
+                    .IsRequired();
+
+                entity.Property(r => r.Description)
+                    .HasMaxLength(1000)
+                    .IsRequired();
+
+                entity.Property(r => r.Category)
+                    .HasMaxLength(50); // Optional category for simplicity
+
+                entity.Property(r => r.Ingredients)
+                    .HasMaxLength(1000); // Allow a reasonable size for ingredients list
+
+                entity.Property(r => r.Instructions)
+                    .HasMaxLength(2000); // Allow detailed instructions
+            });
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            // Ignore Pending Model Changes Warning
             optionsBuilder.ConfigureWarnings(w => w.Ignore(RelationalEventId.PendingModelChangesWarning));
         }
-
     }
 }

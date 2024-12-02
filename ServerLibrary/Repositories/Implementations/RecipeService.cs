@@ -3,10 +3,8 @@ using BaseLibrary.Entities;
 using Microsoft.EntityFrameworkCore;
 using ServerLibrary.Data;
 using ServerLibrary.Repositories.Contracts;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ServerLibrary.Repositories.Implementations
@@ -20,34 +18,55 @@ namespace ServerLibrary.Repositories.Implementations
             _context = context;
         }
 
-        public async Task<IEnumerable<Recipe>> GetAllRecipesAsync()
+        // Get all recipes
+        public async Task<IEnumerable<RecipeDTO>> GetAllRecipesAsync()
         {
-            return await _context.Recipes
-                .Include(r => r.Category)
-                .Include(r => r.RecipeIngredients).ThenInclude(ri => ri.Ingredient)
-                .ToListAsync();
+            var recipes = await _context.Recipes.Include(r => r.User).ToListAsync();
+
+            return recipes.Select(r => new RecipeDTO
+            {
+                Id = r.Id,
+                Title = r.Title,
+                Description = r.Description,
+                Username = r.User?.Username, // Include only user name, not the entire User object
+                Category = r.Category,
+                Ingredients = r.Ingredients,
+                Instructions = r.Instructions
+            }).ToList();
         }
 
-        public async Task<Recipe> GetRecipeByIdAsync(int id)
+
+        // Get a single recipe by ID
+        public async Task<RecipeDTO> GetRecipeByIdAsync(int id)
         {
-            return await _context.Recipes
-                .Include(r => r.Category)
-                .Include(r => r.RecipeIngredients).ThenInclude(ri => ri.Ingredient)
-                .FirstOrDefaultAsync(r => r.Id == id);
+            var recipe = await _context.Recipes.Include(r => r.User).FirstOrDefaultAsync(r => r.Id == id);
+
+            if (recipe == null) return null;
+
+            return new RecipeDTO
+            {
+                Id = recipe.Id,
+                Title = recipe.Title,
+                Description = recipe.Description,
+                Username = recipe.User?.Username,
+                Category = recipe.Category,
+                Ingredients = recipe.Ingredients,
+                Instructions = recipe.Instructions
+            };
         }
 
+
+        // Create a new recipe
         public async Task<Recipe> CreateRecipeAsync(RecipeDTO recipeDto)
         {
             var recipe = new Recipe
             {
                 Title = recipeDto.Title,
                 Description = recipeDto.Description,
-                CategoryId = recipeDto.CategoryId,
-                UserId = recipeDto.UserId, // Associate the recipe with the user
-                RecipeIngredients = recipeDto.IngredientIds.Select(id => new RecipeIngredient
-                {
-                    IngredientId = id
-                }).ToList()
+                UserId = recipeDto.UserId, // Associate with the user
+                Category = recipeDto.Category, // Store the category as a string
+                Ingredients = recipeDto.Ingredients, // Use the single string for ingredients
+                Instructions = recipeDto.Instructions // Store instructions
             };
 
             _context.Recipes.Add(recipe);
@@ -55,7 +74,7 @@ namespace ServerLibrary.Repositories.Implementations
             return recipe;
         }
 
-
+        // Update an existing recipe
         public async Task<Recipe> UpdateRecipeAsync(int id, RecipeDTO recipeDto)
         {
             var recipe = await _context.Recipes.FindAsync(id);
@@ -63,18 +82,16 @@ namespace ServerLibrary.Repositories.Implementations
 
             recipe.Title = recipeDto.Title;
             recipe.Description = recipeDto.Description;
-            recipe.CategoryId = recipeDto.CategoryId;
-
-            recipe.RecipeIngredients = recipeDto.IngredientIds.Select(id => new RecipeIngredient
-            {
-                RecipeId = id,
-                IngredientId = id
-            }).ToList();
+            recipe.Category = recipeDto.Category;
+            recipe.Ingredients = recipeDto.Ingredients; // Use the Ingredients string directly
+            recipe.Instructions = recipeDto.Instructions;
 
             await _context.SaveChangesAsync();
             return recipe;
         }
 
+
+        // Delete a recipe by ID
         public async Task<bool> DeleteRecipeAsync(int id)
         {
             var recipe = await _context.Recipes.FindAsync(id);
@@ -84,5 +101,14 @@ namespace ServerLibrary.Repositories.Implementations
             await _context.SaveChangesAsync();
             return true;
         }
+
+        public async Task<IEnumerable<string>> GetAllCategoriesAsync()
+        {
+            return await _context.Recipes
+                .Select(r => r.Category)
+                .Distinct()
+                .ToListAsync();
+        }
+
     }
 }

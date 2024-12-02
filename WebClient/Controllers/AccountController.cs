@@ -39,12 +39,13 @@ namespace WebClient.Controllers
             {
                 var token = await response.Content.ReadAsStringAsync();
                 HttpContext.Session.SetString("JwtToken", token);
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Home"); // Redirect after successful login
             }
 
             ModelState.AddModelError("", "Invalid username or password.");
-            return View(model);
+            return View(model); // Show validation errors
         }
+
 
         [HttpGet]
         public IActionResult Register()
@@ -65,12 +66,13 @@ namespace WebClient.Controllers
 
             if (response.IsSuccessStatusCode)
             {
-                return RedirectToAction("Login");
+                return RedirectToAction("Login"); // Redirect to login page after registration
             }
 
             ModelState.AddModelError("", "Registration failed. Please try again.");
             return View(model);
         }
+
 
         [HttpPost]
         public IActionResult Logout()

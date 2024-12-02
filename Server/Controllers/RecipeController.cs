@@ -2,8 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ServerLibrary.Repositories.Contracts;
 using BaseLibrary.DTOs;
-using BaseLibrary.Entities;
-using System.Security.Claims;
 
 namespace Server.Controllers
 {
@@ -37,15 +35,9 @@ namespace Server.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateRecipe([FromBody] RecipeDTO recipeDto)
         {
-            if (recipeDto.UserId != int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)))
-            {
-                return Forbid("You can only create recipes for your own account.");
-            }
-
-            var recipe = await _recipeService.CreateRecipeAsync(recipeDto);
-            return CreatedAtAction(nameof(GetRecipeById), new { id = recipe.Id }, recipe);
+            var newRecipe = await _recipeService.CreateRecipeAsync(recipeDto);
+            return CreatedAtAction(nameof(GetRecipeById), new { id = newRecipe.Id }, newRecipe);
         }
-
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateRecipe(int id, [FromBody] RecipeDTO recipeDto)
@@ -61,6 +53,13 @@ namespace Server.Controllers
             var success = await _recipeService.DeleteRecipeAsync(id);
             if (!success) return NotFound(new { message = "Recipe not found" });
             return Ok(new { message = "Recipe deleted successfully" });
+        }
+
+        [HttpGet("categories")]
+        public async Task<IActionResult> GetAllCategories()
+        {
+            var categories = await _recipeService.GetAllCategoriesAsync();
+            return Ok(categories);
         }
     }
 }
