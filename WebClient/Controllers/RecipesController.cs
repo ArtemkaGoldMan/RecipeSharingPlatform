@@ -37,16 +37,9 @@ namespace WebClient.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(RecipeViewModel recipe)
         {
-            if (!ModelState.IsValid)
-            {
-                _logger.LogError("Model state is invalid in Create: {@Recipe}", recipe);
-                return View(recipe);
-            }
-
             try
             {
                 var jsonContent = JsonSerializer.Serialize(recipe);
-                _logger.LogInformation("Sending Create request with payload: {Payload}", jsonContent);
 
                 var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
                 var response = await _httpClient.PostAsync("https://localhost:7181/api/Recipe", content);
@@ -54,16 +47,13 @@ namespace WebClient.Controllers
                 if (!response.IsSuccessStatusCode)
                 {
                     var error = await response.Content.ReadAsStringAsync();
-                    _logger.LogError("Create failed with status {StatusCode} and response: {Response}", response.StatusCode, error);
                     return View("Error");
                 }
 
-                _logger.LogInformation("Create successful");
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Exception occurred during Create");
                 return View("Error");
             }
         }
@@ -77,7 +67,6 @@ namespace WebClient.Controllers
                 if (!response.IsSuccessStatusCode)
                 {
                     var error = await response.Content.ReadAsStringAsync();
-                    _logger.LogError("Failed to load recipe for Edit: {StatusCode}, {Response}", response.StatusCode, error);
                     return View("Error");
                 }
 
@@ -86,7 +75,6 @@ namespace WebClient.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Exception occurred during Edit GET");
                 return View("Error");
             }
         }
@@ -96,14 +84,12 @@ namespace WebClient.Controllers
         {
             if (!ModelState.IsValid)
             {
-                _logger.LogError("Model state is invalid in Edit: {@Recipe}", recipe);
                 return View(recipe);
             }
 
             try
             {
                 var jsonContent = JsonSerializer.Serialize(recipe);
-                _logger.LogInformation("Sending Edit request with payload: {Payload}", jsonContent);
 
                 var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
                 var response = await _httpClient.PutAsync($"https://localhost:7181/api/Recipe/{recipe.Id}", content);
@@ -111,16 +97,13 @@ namespace WebClient.Controllers
                 if (!response.IsSuccessStatusCode)
                 {
                     var error = await response.Content.ReadAsStringAsync();
-                    _logger.LogError("Edit failed with status {StatusCode} and response: {Response}", response.StatusCode, error);
                     return View("Error");
                 }
 
-                _logger.LogInformation("Edit successful");
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Exception occurred during Edit POST");
                 return View("Error");
             }
         }

@@ -53,7 +53,7 @@ namespace WPFClient {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPFClient;component/recipedetailsview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPFClient;V1.0.0.0;component/recipedetailsview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\RecipeDetailsView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

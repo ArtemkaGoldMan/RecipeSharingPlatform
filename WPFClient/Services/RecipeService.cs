@@ -25,20 +25,18 @@ namespace WPFClient.Services
                 response.EnsureSuccessStatusCode();
 
                 var json = await response.Content.ReadAsStringAsync();
-                System.Diagnostics.Debug.WriteLine($"API Response: {json}");
 
                 return JsonConvert.DeserializeObject<IEnumerable<Recipe>>(json);
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Error in GetAllRecipesAsync: {ex.Message}");
                 return Enumerable.Empty<Recipe>();
             }
         }
 
         public async Task AddRecipeAsync(Recipe recipe)
         {
-            var response = await _httpClient.PostAsJsonAsync("Recipe", recipe); // Remove the redundant "api/"
+            var response = await _httpClient.PostAsJsonAsync("Recipe", recipe); 
             if (!response.IsSuccessStatusCode)
             {
                 var error = await response.Content.ReadAsStringAsync();
