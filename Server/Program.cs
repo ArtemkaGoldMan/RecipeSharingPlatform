@@ -22,6 +22,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Register Recipe Service
 builder.Services.AddScoped<IRecipeService, RecipeService>();
+builder.Services.AddScoped<ICommentService, CommentService>();
+builder.Services.AddScoped<IRecipeDetailsService, RecipeDetailsService>();
+builder.Services.AddScoped<IRecipeTagService, RecipeTagService>();
+builder.Services.AddScoped<ITagService, TagService>();
 
 // Configure Swagger
 builder.Services.AddEndpointsApiExplorer();
