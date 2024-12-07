@@ -1,4 +1,4 @@
-﻿@model List<WebClient.Models.RecipeViewModel>
+﻿@model List<BaseLibrary.DTOs.RecipeDTO>
 
 <h1>Recipes</h1>
 <a asp-action="Create" class="btn btn-primary">Create New Recipe</a>
@@ -8,7 +8,7 @@
         <tr>
             <th>Title</th>
             <th>Category</th>
-            <th>Creator</th>
+            <th>Ingredients</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -18,7 +18,7 @@
             <tr>
                 <td>@recipe.Title</td>
                 <td>@recipe.Category</td>
-                <td>@recipe.Creator</td>
+                <td>@recipe.Ingredients</td>
                 <td>
                     <a asp-action="Details" asp-route-id="@recipe.Id" class="btn btn-info">Details</a>
                     <a asp-action="Edit" asp-route-id="@recipe.Id" class="btn btn-warning">Edit</a>

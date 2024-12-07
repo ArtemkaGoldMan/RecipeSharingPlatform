@@ -2,12 +2,60 @@
 
 <h1>Recipe Details</h1>
 
-<div>
-    <h3>@Model.Title</h3>
-    <p><strong>Creator:</strong> @Model.Creator</p>
-    <p><strong>Category:</strong> @Model.Category</p>
-    <p><strong>Ingredients:</strong> @Model.Ingredients</p>
-    <p><strong>Instructions:</strong> @Model.Instructions</p>
+<div class="card mb-3">
+    <div class="card-body">
+        <h3 class="card-title">@Model.Recipe?.Title</h3>
+        <p><strong>Creator:</strong> @Model.Recipe?.Creator</p>
+        <p><strong>Category:</strong> @Model.Recipe?.Category</p>
+        <p><strong>Ingredients:</strong> @Model.Recipe?.Ingredients</p>
+        <p><strong>Instructions:</strong> @Model.Recipe?.Instructions</p>
+    </div>
+</div>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h3>Details</h3>
+        <p><strong>Preparation Time:</strong> @Model.RecipeDetails?.PreparationTime</p>
+        <p><strong>Nutrition Info:</strong> @Model.RecipeDetails?.NutritionInfo</p>
+    </div>
+</div>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h3>Tags</h3>
+        @if (Model.Tags != null && Model.Tags.Any())
+        {
+            <ul>
+                @foreach (var tag in Model.Tags)
+                {
+                    <li>@tag.Name</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No tags available</p>
+        }
+    </div>
+</div>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h3>Comments</h3>
+        @if (Model.Comments != null && Model.Comments.Any())
+        {
+            <ul>
+                @foreach (var comment in Model.Comments)
+                {
+                    <li>@comment.Text</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No comments available</p>
+        }
+    </div>
 </div>
 
 <a asp-action="Index" class="btn btn-secondary">Back to List</a>

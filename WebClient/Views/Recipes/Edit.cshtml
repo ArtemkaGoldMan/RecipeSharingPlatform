@@ -3,45 +3,105 @@
 <h2>Edit Recipe</h2>
 
 <form asp-action="Edit">
+    <input type="hidden" asp-for="Recipe.Id" />
+
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-    <input type="hidden" asp-for="Id" />
 
+    <!-- Recipe Fields -->
     <div class="form-group">
-        <label asp-for="Title"></label>
-        <input asp-for="Title" class="form-control" />
-        <span asp-validation-for="Title" class="text-danger"></span>
+        <label asp-for="Recipe.Title"></label>
+        <input asp-for="Recipe.Title" class="form-control" />
+        <span asp-validation-for="Recipe.Title" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="Description"></label>
-        <input asp-for="Description" class="form-control" />
-        <span asp-validation-for="Description" class="text-danger"></span>
+        <label asp-for="Recipe.Description"></label>
+        <textarea asp-for="Recipe.Description" class="form-control"></textarea>
+        <span asp-validation-for="Recipe.Description" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="Creator"></label>
-        <input asp-for="Creator" class="form-control" />
-        <span asp-validation-for="Creator" class="text-danger"></span>
+        <label asp-for="Recipe.Category"></label>
+        <input asp-for="Recipe.Category" class="form-control" />
+        <span asp-validation-for="Recipe.Category" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="Category"></label>
-        <input asp-for="Category" class="form-control" />
-        <span asp-validation-for="Category" class="text-danger"></span>
+        <label asp-for="Recipe.Ingredients"></label>
+        <textarea asp-for="Recipe.Ingredients" class="form-control"></textarea>
+        <span asp-validation-for="Recipe.Ingredients" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="Ingredients"></label>
-        <textarea asp-for="Ingredients" class="form-control"></textarea>
-        <span asp-validation-for="Ingredients" class="text-danger"></span>
+        <label asp-for="Recipe.Instructions"></label>
+        <textarea asp-for="Recipe.Instructions" class="form-control"></textarea>
+        <span asp-validation-for="Recipe.Instructions" class="text-danger"></span>
+    </div>
+
+    <!-- RecipeDetails Fields -->
+    <h3>Recipe Details</h3>
+    <div class="form-group">
+        <label asp-for="RecipeDetails.PreparationTime"></label>
+        <input asp-for="RecipeDetails.PreparationTime" class="form-control" />
+        <span asp-validation-for="RecipeDetails.PreparationTime" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="Instructions"></label>
-        <textarea asp-for="Instructions" class="form-control"></textarea>
-        <span asp-validation-for="Instructions" class="text-danger"></span>
+        <label asp-for="RecipeDetails.NutritionInfo"></label>
+        <textarea asp-for="RecipeDetails.NutritionInfo" class="form-control"></textarea>
+        <span asp-validation-for="RecipeDetails.NutritionInfo" class="text-danger"></span>
+    </div>
+
+    <!-- Tags -->
+    <h3>Tags</h3>
+    <div id="tags-container">
+        @for (int i = 0; i < Model.Tags.Count; i++)
+        {
+            <div class="form-group">
+                <input name="Tags[@i].Id" type="hidden" value="@Model.Tags[i].Id" />
+                <input name="Tags[@i].Name" class="form-control" value="@Model.Tags[i].Name" />
+            </div>
+        }
+        <button type="button" id="add-tag" class="btn btn-secondary">Add Tag</button>
+    </div>
+
+    <!-- Comments -->
+    <h3>Comments</h3>
+    <div id="comments-container">
+        @for (int i = 0; i < Model.Comments.Count; i++)
+        {
+            <div class="form-group">
+                <input name="Comments[@i].Id" type="hidden" value="@Model.Comments[i].Id" />
+                <input name="Comments[@i].Text" class="form-control" value="@Model.Comments[i].Text" />
+            </div>
+        }
+        <button type="button" id="add-comment" class="btn btn-secondary">Add Comment</button>
     </div>
 
     <button type="submit" class="btn btn-primary">Save</button>
     <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>
+
+@section Scripts {
+    <script>
+        let tagIndex = @Model.Tags.Count;
+        document.getElementById('add-tag').addEventListener('click', function () {
+            const container = document.getElementById('tags-container');
+            const newTag = document.createElement('div');
+            newTag.classList.add('form-group');
+            newTag.innerHTML = `<input name="Tags[${tagIndex}].Name" class="form-control" placeholder="Tag ${tagIndex + 1}" />`;
+            container.insertBefore(newTag, this);
+            tagIndex++;
+        });
+
+        let commentIndex = @Model.Comments.Count;
+        document.getElementById('add-comment').addEventListener('click', function () {
+            const container = document.getElementById('comments-container');
+            const newComment = document.createElement('div');
+            newComment.classList.add('form-group');
+            newComment.innerHTML = `<input name="Comments[${commentIndex}].Text" class="form-control" placeholder="Comment ${commentIndex + 1}" />`;
+            container.insertBefore(newComment, this);
+            commentIndex++;
+        });
+    </script>
+}

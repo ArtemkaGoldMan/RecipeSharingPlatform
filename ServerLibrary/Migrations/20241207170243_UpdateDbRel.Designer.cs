@@ -11,7 +11,7 @@ using ServerLibrary.Data;
 namespace ServerLibrary.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241207142834_UpdateDbRel")]
+    [Migration("20241207170243_UpdateDbRel")]
     partial class UpdateDbRel
     {
         /// <inheritdoc />
