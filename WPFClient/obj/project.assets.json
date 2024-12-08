@@ -14,6 +14,16 @@
             "related": ".xml"
           }
         }
+      },
+      "BaseLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BaseLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BaseLibrary.dll": {}
+        }
       }
     }
   },
@@ -47,10 +57,16 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "BaseLibrary/1.0.0": {
+      "type": "project",
+      "path": "../BaseLibrary/BaseLibrary.csproj",
+      "msbuildProject": "../BaseLibrary/BaseLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "BaseLibrary >= 1.0.0",
       "Newtonsoft.Json >= 13.0.3"
     ]
   },
@@ -86,7 +102,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\BaseLibrary.csproj": {
+              "projectPath": "C:\\Users\\artem\\University\\Proj_Web_Les\\lab5\\RecipeSharingPlatform\\BaseLibrary\\BaseLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

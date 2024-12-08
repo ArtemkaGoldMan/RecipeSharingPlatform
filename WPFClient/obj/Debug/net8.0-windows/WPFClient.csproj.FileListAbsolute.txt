@@ -4,12 +4,16 @@ C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\bin\
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\bin\Debug\net8.0-windows\WPFClient.dll
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\bin\Debug\net8.0-windows\WPFClient.pdb
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\bin\Debug\net8.0-windows\BaseLibrary.dll
+C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\bin\Debug\net8.0-windows\BaseLibrary.pdb
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\obj\Debug\net8.0-windows\WPFClient.csproj.AssemblyReference.cache
+C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\obj\Debug\net8.0-windows\FullInfoView.g.cs
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\obj\Debug\net8.0-windows\RecipeDetailsView.g.cs
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\obj\Debug\net8.0-windows\WPFClient_MarkupCompile.cache
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\obj\Debug\net8.0-windows\WPFClient_MarkupCompile.lref
+C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\obj\Debug\net8.0-windows\FullInfoView.baml
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\obj\Debug\net8.0-windows\RecipeDetailsView.baml
 C:\Users\artem\University\Proj_Web_Les\lab5\RecipeSharingPlatform\WPFClient\obj\Debug\net8.0-windows\WPFClient.g.resources

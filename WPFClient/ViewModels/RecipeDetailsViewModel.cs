@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using WPFClient.Commands;
-using WPFClient.Models;
+using BaseLibrary.Entities;
 
 namespace WPFClient.ViewModels
 {
