@@ -27,6 +27,13 @@
     </div>
 
     <div class="form-group">
+        <label asp-for="Recipe.Creator"></label>
+        <input asp-for="Recipe.Creator" class="form-control" />
+        <span asp-validation-for="Recipe.Creator" class="text-danger"></span>
+    </div>
+
+
+    <div class="form-group">
         <label asp-for="Recipe.Ingredients"></label>
         <textarea asp-for="Recipe.Ingredients" class="form-control"></textarea>
         <span asp-validation-for="Recipe.Ingredients" class="text-danger"></span>
@@ -62,7 +69,6 @@
                 <input name="Tags[@i].Name" class="form-control" value="@Model.Tags[i].Name" />
             </div>
         }
-        <button type="button" id="add-tag" class="btn btn-secondary">Add Tag</button>
     </div>
 
     <!-- Comments -->
@@ -75,33 +81,8 @@
                 <input name="Comments[@i].Text" class="form-control" value="@Model.Comments[i].Text" />
             </div>
         }
-        <button type="button" id="add-comment" class="btn btn-secondary">Add Comment</button>
     </div>
 
     <button type="submit" class="btn btn-primary">Save</button>
     <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>
-
-@section Scripts {
-    <script>
-        let tagIndex = @Model.Tags.Count;
-        document.getElementById('add-tag').addEventListener('click', function () {
-            const container = document.getElementById('tags-container');
-            const newTag = document.createElement('div');
-            newTag.classList.add('form-group');
-            newTag.innerHTML = `<input name="Tags[${tagIndex}].Name" class="form-control" placeholder="Tag ${tagIndex + 1}" />`;
-            container.insertBefore(newTag, this);
-            tagIndex++;
-        });
-
-        let commentIndex = @Model.Comments.Count;
-        document.getElementById('add-comment').addEventListener('click', function () {
-            const container = document.getElementById('comments-container');
-            const newComment = document.createElement('div');
-            newComment.classList.add('form-group');
-            newComment.innerHTML = `<input name="Comments[${commentIndex}].Text" class="form-control" placeholder="Comment ${commentIndex + 1}" />`;
-            container.insertBefore(newComment, this);
-            commentIndex++;
-        });
-    </script>
-}

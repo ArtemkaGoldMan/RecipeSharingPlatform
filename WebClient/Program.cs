@@ -4,8 +4,23 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddHttpClient<RecipesController>();
 
+// Configure Antiforgery
+builder.Services.AddAntiforgery(options =>
+{
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always; // Use secure cookies
+    options.Cookie.SameSite = SameSiteMode.Strict; // Enforce strict SameSite cookies
+});
+
+// Configure Cookie Policy
+builder.Services.Configure<CookiePolicyOptions>(options =>
+{
+    options.MinimumSameSitePolicy = SameSiteMode.Strict; // Use strict cookies
+    options.Secure = CookieSecurePolicy.Always; // Enforce HTTPS for cookies
+});
+
+// Configure HttpClient for RecipesController
+builder.Services.AddHttpClient<RecipesController>();
 
 var app = builder.Build();
 
@@ -13,12 +28,14 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+// Add Cookie Policy Middleware
+app.UseCookiePolicy();
 
 app.UseRouting();
 

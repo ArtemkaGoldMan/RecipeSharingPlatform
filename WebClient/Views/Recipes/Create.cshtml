@@ -25,6 +25,12 @@
     </div>
 
     <div class="form-group">
+        <label asp-for="Recipe.Creator"></label>
+        <input asp-for="Recipe.Creator" class="form-control" />
+        <span asp-validation-for="Recipe.Creator" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
         <label asp-for="Recipe.Ingredients"></label>
         <textarea asp-for="Recipe.Ingredients" class="form-control"></textarea>
         <span asp-validation-for="Recipe.Ingredients" class="text-danger"></span>

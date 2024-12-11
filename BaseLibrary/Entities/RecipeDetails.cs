@@ -10,10 +10,10 @@ namespace BaseLibrary.Entities
     {
         public int Id { get; set; }
         public int RecipeId { get; set; } // Foreign key
-        public string NutritionInfo { get; set; } // Example: "Calories: 200, Protein: 5g"
-        public string PreparationTime { get; set; } // Example: "20 minutes"
+        public string NutritionInfo { get; set; } 
+        public string PreparationTime { get; set; } 
 
-        public Recipe Recipe { get; set; } // Navigation property
+        public Recipe Recipe { get; set; } 
     }
 
 }

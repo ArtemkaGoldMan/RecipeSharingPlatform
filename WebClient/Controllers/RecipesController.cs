@@ -100,10 +100,6 @@ namespace WebClient.Controllers
             }
         }
 
-
-
-
-
         // Display the Create page
         public IActionResult Create()
         {
@@ -225,44 +221,56 @@ namespace WebClient.Controllers
         {
             try
             {
+                // Log Recipe data
+                _logger.LogInformation($"Updating Recipe: {System.Text.Json.JsonSerializer.Serialize(viewModel.Recipe)}");
+
                 // Update Recipe
                 var recipeResponse = await _httpClient.PutAsJsonAsync($"https://localhost:7181/api/Recipe/{viewModel.Recipe.Id}", viewModel.Recipe);
                 if (!recipeResponse.IsSuccessStatusCode)
                 {
-                    _logger.LogError($"Failed to update recipe: {recipeResponse.StatusCode}");
+                    var error = await recipeResponse.Content.ReadAsStringAsync();
+                    _logger.LogError($"Failed to update recipe: {recipeResponse.StatusCode}. Error: {error}");
                     return View("Error");
                 }
+
+                // Log RecipeDetails data
+                _logger.LogInformation($"Updating RecipeDetails: {System.Text.Json.JsonSerializer.Serialize(viewModel.RecipeDetails)}");
 
                 // Update RecipeDetails
                 var detailsResponse = await _httpClient.PutAsJsonAsync($"https://localhost:7181/api/RecipeDetails/{viewModel.RecipeDetails.Id}", viewModel.RecipeDetails);
                 if (!detailsResponse.IsSuccessStatusCode)
                 {
-                    _logger.LogError($"Failed to update recipe details: {detailsResponse.StatusCode}");
+                    var error = await detailsResponse.Content.ReadAsStringAsync();
+                    _logger.LogError($"Failed to update recipe details: {detailsResponse.StatusCode}. Error: {error}");
                 }
 
                 // Update Tags
                 foreach (var tag in viewModel.Tags)
                 {
+                    _logger.LogInformation($"Updating Tag: {System.Text.Json.JsonSerializer.Serialize(tag)}");
                     var tagResponse = tag.Id == 0
                         ? await _httpClient.PostAsJsonAsync("https://localhost:7181/api/RecipeTag", tag)
                         : await _httpClient.PutAsJsonAsync($"https://localhost:7181/api/RecipeTag/{tag.Id}", tag);
 
                     if (!tagResponse.IsSuccessStatusCode)
                     {
-                        _logger.LogError($"Failed to update tag: {tagResponse.StatusCode}");
+                        var error = await tagResponse.Content.ReadAsStringAsync();
+                        _logger.LogError($"Failed to update tag: {tagResponse.StatusCode}. Error: {error}");
                     }
                 }
 
                 // Update Comments
                 foreach (var comment in viewModel.Comments)
                 {
+                    _logger.LogInformation($"Updating Comment: {System.Text.Json.JsonSerializer.Serialize(comment)}");
                     var commentResponse = comment.Id == 0
                         ? await _httpClient.PostAsJsonAsync("https://localhost:7181/api/Comment", comment)
                         : await _httpClient.PutAsJsonAsync($"https://localhost:7181/api/Comment/{comment.Id}", comment);
 
                     if (!commentResponse.IsSuccessStatusCode)
                     {
-                        _logger.LogError($"Failed to update comment: {commentResponse.StatusCode}");
+                        var error = await commentResponse.Content.ReadAsStringAsync();
+                        _logger.LogError($"Failed to update comment: {commentResponse.StatusCode}. Error: {error}");
                     }
                 }
 
@@ -274,6 +282,7 @@ namespace WebClient.Controllers
                 return View("Error");
             }
         }
+
 
 
         // Delete Recipe (and associated Details, Tags, Comments)

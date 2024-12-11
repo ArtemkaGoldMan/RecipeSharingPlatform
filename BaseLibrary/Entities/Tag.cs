@@ -9,7 +9,7 @@ namespace BaseLibrary.Entities
     public class Tag
     {
         public int Id { get; set; }
-        public string Name { get; set; } // Example: "Vegetarian", "Dessert"
+        public string Name { get; set; } 
 
         public ICollection<RecipeTag> RecipeTags { get; set; } // Navigation property for *:* relationship
     }
